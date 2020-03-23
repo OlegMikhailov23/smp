@@ -1,0 +1,88 @@
+
+$tablet-widths: "min-width: 720px";
+$desktop-widths: "min-width: 1140px";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+//--- Font-size...
+
+$main-font-size: 14px;
+
+$main-line-height: 20px;
+
+//--- Font-colors...
+
+$main-font-color: #2d2d2d;
+
+$h1-color: #000000;
+
+$h2-colr: #000000;
+
+$h3-color: #000000;
+
+$h4-colr: #000000;
+
+$article-colr: #000000;
+
+$hover-font-color: #ffffff;
+
+$active-font-color: #000000;
+
+//--- Btn-colors...
+
+$btn-bg-hover-color: #000000;
+
+$btn-bg-active-color: #000000;
+
+$btn-bg: #ffe13e;
+
+$submit-btn-bg: #ffe13e;
+
+//--- Main-backgrounds...
+
+$body-bg: #ececec;
+
+$background-colr-1: #049aff;
+
+$background-colr-2: #e7ebfc;
+
+$background-colr-3: #ffffff;
+
+
+@keyframes modal-bounce {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+};
+
+@keyframes main-nav-after-bounce {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+};
+
+@keyframes main-picture-bounce {
+    0% {
+        transform: translateY(-120px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+};

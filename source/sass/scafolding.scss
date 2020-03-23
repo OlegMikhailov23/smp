@@ -1,0 +1,57 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+@font-face {
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/GoogleSans-Medium.ttf");
+
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/GoogleSans-Bold.ttf");
+}
+
+.body-wrapper {
+  position: relative;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: $body-bg;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  color: $main-font-color;
+}
+
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
