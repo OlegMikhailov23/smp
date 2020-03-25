@@ -164,10 +164,18 @@
     margin-left: -$size;
   }
 }
-
+// центровщик!!!
 @mixin container() {
-  width: 320px;
-  margin: 0 auto;
+    max-width: 720px;
+    margin: 0 auto;
+
+  @media ($tablet-widths) {
+    max-width:1200px;
+  }
+
+  @media ($desktop-widths) {
+    max-width: 1800px;
+  }
 }
 
 @mixin zero-style() {
