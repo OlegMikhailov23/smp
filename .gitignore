@@ -9,6 +9,4 @@ Thumbs.db
 *.pdf
 *.xml
 .htaccess
-gulpfile.js
-package-lock.json
-package.json
+

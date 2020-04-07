@@ -1,0 +1,194 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.intro {
+  @include container();
+  position: relative;
+  background-size: 100% 100%;
+  background-position-x: left;
+  width: 100%;
+  height: 750px;
+  z-index: 10;
+}
+
+.intro__slide {
+  width: 100%;
+  height: 750px;
+}
+
+.intro__wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.intro__slide {
+  position: static;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.intro__slide-1 {
+  background-image: url("../img/slider-2-mobile.jpg");
+}
+
+.intro__slide-2 {
+  background-image: url("../img/slider-1-mobile.jpg");
+}
+
+.intro__slide-3 {
+  background-image: url("../img/slider-3-mobile.jpg");
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+.owl-carousel button.owl-dot span {
+  background-color: $background-colr-1 !important;
+  width: 30px !important;
+  height: 5px !important;
+}
+
+.owl-carousel button.owl-dot.active span {
+  border: 1px solid #000000;
+  background-color: #cccccc !important;
+}
+
+.intro__title {
+  @include zero-style();
+  @include padding-left-right();
+  padding-top: 20%;
+  padding-bottom: 3%;
+  @include font-size (20, 28px);
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: 2px;
+}
+
+.intro__fact-title {
+  display: block;
+  padding-bottom: 3%;
+  @include zero-style();
+  text-shadow: 1px 1px 3px #333333;
+  @include font-size (1.7em, 22px);
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: $background-colr-1;
+  font-family: inherit;
+}
+
+.intro__fact-article {
+  display: block;
+  @include zero-style();
+  padding-top: 3%;
+  @include font-size (1.2em, 18px);
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #000000;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.intro__btn {
+  @include btn();
+  @include padding-top-bottom (17px, 17px);
+  @include font-size(16px, 20px);
+  background-color: $background-colr-1;
+  color: #ffffff;
+  width: 170px;
+  text-decoration: none !important;
+  text-transform: normal;
+  border-radius: 5px;
+
+  &:hover {
+    color: #000000;
+    background-color: $btn-bg-hover-color;
+  }
+}
+
+@media ($tablet-widths) {
+  .owl-dots {
+    left: 40%;
+  }
+
+  .intro__title {
+    @include font-size (2em, 37px);
+    text-align: center;
+    margin-top: 0 !important;
+  }
+
+  .intro__fact-title {
+    text-align: center;
+    @include font-size (1.9em, 22px);
+  }
+
+  .intro__fact-article {
+    text-align: center;
+    @include font-size(1.5em, 24px);
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .intro__btn {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    @include font-size(1.5em, 24px);
+  }
+
+  .intro__slide-1 {
+    background-image: url("../img/slider-2-tablet.jpg");
+  }
+
+  .intro__slide-2 {
+    background-image: url("../img/slider-1-tablet.jpg");
+  }
+
+  .intro__slide-3 {
+    background-image: url("../img/slider-3-tablet.jpg");
+  }
+}
+
+@media ($desktop-widths) {
+  .intro {
+    height: 850px;
+  }
+
+  .intro__slide {
+    height: 850px;
+  }
+
+  .intro__title {
+    padding-top: 20%;
+    @include font-size(2.5em, auto);
+  }
+
+  .intro__fact {
+    padding-top: 20%;
+  }
+
+  .intro__fact-article {
+    text-align: left;
+  }
+
+  .intro__fact-title {
+    @include font-size (2.3em, 32px);
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .intro__fact-title::after {}
+
+  .owl-dots {
+    left: 46%;
+  }
+}

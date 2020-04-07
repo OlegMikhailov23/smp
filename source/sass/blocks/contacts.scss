@@ -1,0 +1,174 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.contacts__wrapper {
+  @include container();
+  background-color: $background-colr-3;
+}
+
+.contacts__title {
+  @include zero-style();
+  position: relative;
+  @include fontpref(2.2em, auto, 700);
+  width: 50%;
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 8%;
+  margin-bottom: 5%;
+  color: $main-font-color;
+  border-bottom: 5px solid $main-font-color;
+}
+
+.contacts__items {
+  padding-bottom: 50px;
+  @include cover-background("../img/contacts-bg.jpg", top, center, scroll);
+}
+
+.contacts__form__title {
+  @include zero-style();
+  @include fontpref(1.8em, auto, 700);
+  text-align: center;
+}
+
+.contacts__wrapper .contacts__form__article {
+  @include zero-style();
+  @include fontpref(1.3em, auto, 400);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contacts__items p {
+  @include zero-style();
+  padding-top: 5%;
+  padding-bottom: 5%;
+  @include fontpref(1.2em, 22px, 700);
+  color: $white-font-color;
+}
+
+.contacts__items a {
+  @include zero-style();
+  @include fontpref(1em, 22px, 400);
+  color: $white-font-color;
+
+  &:hover {
+    color: $btn-bg-hover-color;
+    transition: 0.3s;
+  }
+}
+
+.contacts__items span {
+  @include zero-style();
+  @include fontpref(1em, 22px, 400);
+  color: $white-font-color;
+}
+
+.contacts__form__title {
+  color: $btn-bg-hover-color;
+}
+
+.contacts__form__field {
+  @include zero-style();
+  //display: block;
+  margin: 0 auto;
+  width: 80%;
+  @include fontpref(1.3em, 22px, 400);
+  padding-left: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $white-font-color;
+  border: 3px solid $white-font-color;
+  border-radius: 2px;
+  background-color: transparent;
+  margin-bottom: 20px;
+
+  @include input-placeholder {
+    color: $white-font-color;
+  }
+}
+
+.contacts__form__submit-btn {
+  @include btn();
+  @include padding-top-bottom (17px, 17px);
+  @include font-size(16px, 20px);
+  font-weight: 700;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #ffffff;
+  width: 170px;
+  text-decoration: none !important;
+  text-transform: normal;
+  border-radius: 5px;
+  border: 3px solid $white-font-color;
+  &:hover {
+    color: #000000;
+    background-color: $btn-bg-hover-color;
+  }
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__map {
+  @include cover-background("../img/СМП-804_29-03-2020_11-04-43.jpg", top, center, scroll);
+  height: 400px;
+}
+
+@media ($tablet-widths) {
+  .contacts__title {
+
+    width: 20%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+  }
+
+  .contacts__items p {
+    @include fontpref(1.4em, 26px, 700);
+    padding-left: 5%;
+  }
+
+  .contacts__map {
+    @include cover-background("../img/map-desktop.jpg", top, center, scroll);
+    height: 550px;
+  }
+
+  .flex-container {
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+  .contacts__form__field-half {
+    width: 40%;
+  }
+
+  .contacts__form__field-text {
+    width: 90%;
+  }
+
+  .contacts__items {
+  padding-bottom: 0;
+}
+
+.contacts__items p {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.contacts__items .contacts__form__article {
+     padding-left: 10%;
+     padding-right: 10%;
+}
+
+.contacts__form__field {
+  margin-bottom: 10px;
+}
+
+.contacts__title {
+  padding-top: 2%;
+}
+
+}

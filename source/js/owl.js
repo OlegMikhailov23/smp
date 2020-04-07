@@ -7,7 +7,7 @@ $('.intro-slider').owlCarousel({
     autoplay: true,
     nav: false,
     autoplaySpeed: 1000,
-    autoplayTimeout: 10000,
+    autoplayTimeout: 15000,
     mouseDrag: true,
     touchDrag: true,
     margin: 0

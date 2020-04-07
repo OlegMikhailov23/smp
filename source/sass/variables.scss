@@ -1,6 +1,6 @@
 
 $tablet-widths: "min-width: 720px";
-$desktop-widths: "min-width: 1140px";
+$desktop-widths: "min-width: 992px";
 $retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
 //--- Font-size...
 
@@ -10,7 +10,7 @@ $main-line-height: 20px;
 
 //--- Font-colors...
 
-$main-font-color: #2d2d2d;
+$main-font-color: #1d1d1b;
 
 $h1-color: #000000;
 
@@ -24,11 +24,13 @@ $article-colr: #000000;
 
 $hover-font-color: #ffffff;
 
+$white-font-color: #ffffff;
+
 $active-font-color: #000000;
 
 //--- Btn-colors...
 
-$btn-bg-hover-color: #000000;
+$btn-bg-hover-color: #f46473;
 
 $btn-bg-active-color: #000000;
 
@@ -40,24 +42,42 @@ $submit-btn-bg: #ffe13e;
 
 $body-bg: #ececec;
 
-$background-colr-1: #049aff;
+$background-colr-1: #e20613;
 
-$background-colr-2: #e7ebfc;
+$background-colr-2: #0c9aec;
 
 $background-colr-3: #ffffff;
 
 
-@keyframes modal-bounce {
+@keyframes slideUp {
     0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(-30px);
+        transform: translateY(100%);
     }
     100% {
-        transform: translateY(0px);
+        transform: translateY(0%);
     }
 };
+
+@keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    // 50%{
+    //     -webkit-transform: translateY(8%);
+    // }
+    // 65%{
+    //     -webkit-transform: translateY(-4%);
+    // }
+    // 80%{
+    //     -webkit-transform: translateY(4%);
+    // }
+    // 95%{
+    //     -webkit-transform: translateY(-2%);
+    // }
+    100% {
+        -webkit-transform: translateY(100%);
+    }
+}
 
 @keyframes main-nav-after-bounce {
     0% {
