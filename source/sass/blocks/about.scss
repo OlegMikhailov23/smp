@@ -1,0 +1,78 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.about__wrapper {
+  @include container();
+  background-color: $background-colr-3;
+}
+
+.about__content {
+  padding-top: 10%;
+}
+
+.about__title {
+  @include zero-style();
+  position: relative;
+  @include fontpref(2.2em, auto, 700);
+  width: 60%;
+  text-align: right;
+  padding-bottom: 20px;
+  left: 40%;
+  position: relative;
+  padding-top: 8%;
+  margin-bottom: 5%;
+  color: $main-font-color;
+  border-bottom: 5px solid $main-font-color;
+}
+
+.about__article {
+  @include zero-style();
+  @include padding-left-right(15px, 15px);
+  padding-top: 10%;
+  padding-bottom: 50px;
+  @include fontpref(1.3em, 22px, 400);
+}
+
+.about__btn {
+  @include btn();
+  @include padding-top-bottom (17px, 17px);
+  @include font-size(16px, 20px);
+  margin: 0 auto;
+  background-color: transparent;
+  color: $background-colr-1;
+  width: 170px;
+  text-decoration: none !important;
+  text-transform: normal;
+  border: 2px solid $background-colr-1;
+  border-radius: 5px;
+  &:hover {
+    color: #000000;
+    background-color: $btn-bg-hover-color;
+  }
+}
+
+@media ($tablet-widths) {
+
+.about__content {
+  padding-top: 2%;
+}
+
+.about__article {
+  padding-top: 1%;
+}
+
+.about__title {
+    font-size: 2.8em;
+    padding-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    width: 35%;
+    left: 50%;
+  }
+}
+
+@media ($desktop-widths) {
+.about__title {
+    width: 28%;
+  }
+}

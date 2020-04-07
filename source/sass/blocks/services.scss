@@ -1,0 +1,159 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.services__wrapper {
+  padding-top: 50px;
+  position: relative;
+  @include container();
+  background-color: $background-colr-1;
+  margin-top: 3%;
+}
+
+.services__title {
+  @include zero-style();
+  @include fontpref(2.2em, auto, 700);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  width: 70%;
+  position: relative;
+  padding-top: 5%;
+  color: $white-font-color;
+  border-bottom: 5px solid $main-font-color;
+}
+
+.services__item-2 {
+  background-color: $background-colr-2;
+}
+
+.services__item-2 .services__item-text {
+  order: 2;
+}
+
+.services__item-2 .services__item-pic {
+  order: 1;
+}
+
+.services__item-3 {
+  background-color: $background-colr-3;
+  @include cover-background("../img/services-3-mobile.jpg", top, center, scroll);
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.services__item-3 h3 {
+  color: $main-font-color;
+}
+
+.services__item-4 {
+  margin-top: 0;
+}
+
+.services__item-pic {
+  width: 100%;
+  height: 300px;
+  z-index: 10;
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+}
+
+.services__item-title {
+  @include zero-style();
+  @include fontpref(1.8em, 26px, 700);
+  padding-top: 20px;
+  color: $white-font-color;
+}
+
+.services__item-article {
+  @include zero-style();
+  padding-top: 5%;
+  @include fontpref(1.3em, 22px, 400);
+}
+
+.services__item-text {
+  padding-bottom: 15px;
+}
+
+.services__item-pic-1 {
+  @include cover-background("../img/services-1.jpg", top, center, scroll);
+}
+
+.services__item-pic-2 {
+  @include cover-background("../img/services-2.jpg", top, center, scroll);
+}
+
+.services__item-pic-4 {
+  @include cover-background("../img/services-4.jpg", top, center, scroll);
+}
+
+.services__triangle {
+  position: absolute;
+  margin-bottom: -90px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 92px;
+  background-color: transparent;
+  & img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media ($tablet-widths) {
+  .services__item {
+    padding-bottom: 0;
+  }
+
+  .services__title {
+    font-size: 2.8em;
+    padding-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    width: 20%;
+  }
+
+  .services__item-text {
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+  }
+
+  .services__item-2 .services__item-text {
+  order: 1;
+  }
+
+.services__item-2 .services__item-pic {
+  order: 2;
+}
+
+
+.services__item-3 {
+  @include cover-background("../img/services-3-desktop.jpg", top, center, scroll);
+  padding-left: 20%;
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+}
+
+
+@media ($desktop-widths) {
+.services__title {
+    width: 30%;
+  }
+
+  .services__item-pic {
+  height: 350px;
+}
+
+.services__item-text {
+    padding-top: 4%;
+  }
+
+.services__triangle {
+  margin-bottom: -88px;
+}
+}

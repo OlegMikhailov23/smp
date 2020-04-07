@@ -90,7 +90,6 @@
 .intro__fact-article {
   display: block;
   @include zero-style();
-  // @include padding-left-right();
   padding-top: 3%;
   @include font-size (1.2em, 18px);
   font-weight: 700;
@@ -161,15 +160,12 @@
 
 @media ($desktop-widths) {
   .intro {
+    height: 850px;
+  }
 
-  height: 850;
-
-}
-
-.intro__slide {
-
-  height: 850px;
-}
+  .intro__slide {
+    height: 850px;
+  }
 
   .intro__title {
     padding-top: 20%;
@@ -190,9 +186,7 @@
     text-align: left;
   }
 
-  .intro__fact-title::after {
-
-  }
+  .intro__fact-title::after {}
 
   .owl-dots {
     left: 46%;

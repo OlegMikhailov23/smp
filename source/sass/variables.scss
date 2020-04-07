@@ -24,6 +24,8 @@ $article-colr: #000000;
 
 $hover-font-color: #ffffff;
 
+$white-font-color: #ffffff;
+
 $active-font-color: #000000;
 
 //--- Btn-colors...
@@ -42,22 +44,40 @@ $body-bg: #ececec;
 
 $background-colr-1: #e20613;
 
-$background-colr-2: #138fd7;
+$background-colr-2: #0c9aec;
 
 $background-colr-3: #ffffff;
 
 
-@keyframes modal-bounce {
+@keyframes slideUp {
     0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(-30px);
+        transform: translateY(100%);
     }
     100% {
-        transform: translateY(0px);
+        transform: translateY(0%);
     }
 };
+
+@keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    // 50%{
+    //     -webkit-transform: translateY(8%);
+    // }
+    // 65%{
+    //     -webkit-transform: translateY(-4%);
+    // }
+    // 80%{
+    //     -webkit-transform: translateY(4%);
+    // }
+    // 95%{
+    //     -webkit-transform: translateY(-2%);
+    // }
+    100% {
+        -webkit-transform: translateY(100%);
+    }
+}
 
 @keyframes main-nav-after-bounce {
     0% {

@@ -1,3 +1,11 @@
+
+@mixin fontpref($size, $lineheigth, $weight) {
+  font-size: $size;
+  line-height: $lineheigth;
+  font-family: inherit;
+  font-weight: $weight
+}
+
 // Бэкграунд на всю ширину экрана.
 // пример: @include cover-background("../img/main.jpg", top, center, scroll);
 @mixin cover-background($img-uri, $background-top: "center", $background-left: "center", $background-attachment: "fixed") {
@@ -164,6 +172,7 @@
     margin-left: -$size;
   }
 }
+
 // центровщик!!!
 @mixin container() {
     max-width: 720px;

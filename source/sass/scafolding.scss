@@ -27,7 +27,7 @@
   position: relative;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
-  background-color: $body-bg;
+  background-color: $background-colr-3;
   font-size: $main-font-size;
   color: $main-font-color;
 }
@@ -52,5 +52,12 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.hidden {
+     opacity:0;
+}
+.visible {
+     opacity:1;
 }
 
